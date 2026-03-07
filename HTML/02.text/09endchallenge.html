@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="scientific notes">
+	<meta name="keywords" content="scientific notes, formulae">
+	<title>Scientific Notes</title>
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			margin: 2.5%;
+		}
+		header, footer{
+			background-color: #abdae1;
+			padding: 2%;
+			text-align: center;
+		}
+		header{
+			background-image: url('challenge.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		nav ul{
+			list-style-type: none;
+		}
+		nav li{
+			display: inline;
+			padding: 1%;
+		}
+		nav a{
+			text-decoration: none;
+		}
+		nav a:hover {
+			color: darkblue;
+			font-weight: bold;
+		}
+		h2{
+			text-align: center;
+		}
+		span{
+			background-color: yellow;
+			padding: 1%;
+		}
+		span:hover{
+			font-size: 125%;
+			color:red;
+		}
+		dt{
+    		scroll-margin-top: 50px; /* adjusts position when scrolling */
+		}
+		#one, #three, #four{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#one h2, #three h2, #four h2{
+			width: 100%;
+		}
+		#one div, #three div, #four div{
+			padding:  1%;
+			flex: 1;
+		}
+		#two h2, pre, p{
+			padding: 1%;
+		}
+		#three a {
+    		color: blue;
+    		text-decoration: underline;
+		}
+		#three a:hover{
+    		color: darkred;
+    		font-weight: bold;
+		}
+		#one{
+			background-color: #a09cb0;
+		}
+		#two{
+			background-color: #a2abbd;
+		}
+		#three{
+			background-color: #a3b9c9;
+		}
+		#four{
+			background-color: #a7cad5;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Scientific Notes</h1>
+		<nav>
+			<ul>
+				<li><a href="#Formulae-basket">Formulae basket</a></li>
+				<li><a href="#Pre-Area">Pre Area</a></li>
+				<li><a href="#CheckList">CheckList</a></li>
+				<li><a href="#bilingual">Bilingual</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="one">
+		<h2 id="Formulae-basket">Formulae basket</h2>
+		<div>
+			<h3>Area or a circle</h3>
+			<p>The area of a circle is the amount of space inside the circular boundary. It is calculated using the formula:<br>
+				<span><var>A &equals; &pi;r&sup2;</var></span>
+			</p>
+		</div>
+		<div>
+			<h3>Pythagoras’ Theorem</h3>
+			<p>Pythagoras’ theorem applies to a right-angled triangle and is written as:<br>
+				<span>a&sup2; + b&sup2; &equals; c&sup2;</span><br>
+			Here, a and b are the two shorter sides, and c is the hypotenuse (the longest side opposite the right angle).</p>
+		</div>
+		<div>
+			<h3>Equation of Motion</h3>
+			<p>The formula<br>
+				<span>s &equals; ut + 1/2at&sup2;</span><br>
+			describes the displacement of an object moving with constant acceleration.The equation shows that distance depends on how fast the object started and how its speed changes over time due to acceleration.</p>
+		</div>
+		<div>
+			<h3>Mass–Energy Equivalence</h3>
+			<p>The equation<br>
+				<span>E &equals; mc&sup2;</span><br>
+			comes from Einstein’s theory of relativity. It states that mass and energy are interchangeable. Because the speed of light squared is extremely large, even a small amount of mass can be converted into a huge amount of energy.</p>
+		</div>
+	</div>
+	<div id="two">
+		<h2 id="Pre-Area">Pre Area</h2>
+		<p><var>&lt;pre&gt;</var> is used to put something freely in the web page as the developer want. Normal <var>&lt;p&gt;</var> tag ignore spaces, and the sturcture develper made, but here you can put text the way you want.</p>
+		<pre>
+			  /\
+			 /  \
+			/____\
+			|    |
+			|NASA|
+			|____|
+		E = mc&sup2;
+		&pi; = 3.14159
+		</pre>
+	</div>
+	<div id="three">
+		<h2 id="CheckList">CheckList</h2>
+		<div>
+			<h3>What have we learn?</h3>
+			<ol>
+				<li>HTML structure</li>
+				<li>Text formatting</li>
+				<li>Entities</li>
+				<li>List</li>
+				<li>Ruby Text</li>
+			</ol>
+		</div>
+		<div>
+			<h3>With more details..</h3>
+			<ul>
+				<li>&amp;lt; &rarr; less than(&lt;)</li>
+				<li>&amp;gt; &rarr; greater than(&gt;)</li>
+				<li>&amp;copy; &rarr; copyright(&copy;)</li>
+				<li>&amp;alpha; &rarr; alpha(&alpha;)</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Real meaning behind letters</h3>
+			<ul>
+    			<li><a href="#w3c">W3C</a></li>
+    			<li><a href="#html">HTML</a></li>
+			</ul>
+			<dl>
+				<dt id="w3c">W3C</dt>
+					<dd>World Wide Web Consortiam</dd>
+				<dt id="html">HTML</dt>
+					<dd>Hyper Text Markup Language</dd>
+			</dl>			
+		</div>
+		<div>
+			<h3>Who takes the lead?</h3>
+			<ol>
+				<li>Elements(tags)
+					<ul>
+						<li>&lt;head&gt;</li>
+						<li>&lt;title&gt;</li>
+						<li>&lt;body&gt;</li>
+						<li>&lt;style&gt;</li>
+						<li>&lt;div&gt;</li>
+					</ul>
+				</li>
+				<li>Attributes
+					<ul>
+						<li>lang</li>
+						<li>content</li>
+						<li>id</li>
+						<li>width</li>
+						<li>height</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div id="four">
+		<h2 id="bilingual">Bilingual</h2>
+		<div>
+			<p lang="ja">
+				<ruby>
+					漢 <rt>kan</rt>
+					字 <rt>ji</rt>
+  				</ruby>
+			</p>
+		</div>
+		<div lang="ja">
+			<p>
+				<ruby>
+					日本 <rt>にほん</rt>
+					語 <rt>ご</rt>
+				</ruby> is the Japanese language.
+			</p>
+		</div>
+		<div lang="zh">
+			<p>
+  				<ruby>
+    				我 <rt>wǒ</rt>
+    				爱 <rt>ài</rt>
+    				学 <rt>xué</rt>
+    				习 <rt>xí</rt>
+  				</ruby> Chinese.
+			</p>
+		</div>
+		<div>
+			<p>
+  				<ruby>
+    				HTML <rt>Hypertext Markup Language</rt>
+  				</ruby> is used to create webpages.
+			</p>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; Scientific Notes 2026</p>
+	</footer>	
+</body>
+</html>
