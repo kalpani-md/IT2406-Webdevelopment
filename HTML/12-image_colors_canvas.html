@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="html images, colors and canvas">
+	<meta name="keyword" content="html, image, image map, colors, canvas">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>Image, colors and canvas</title>
+	<style>
+		h1, h2{
+			text-align: center;
+		}
+		nav li{
+			list-style-type: none;
+			display: inline;
+		}
+		nav a{
+			padding-right: 4%;			
+			text-decoration: none;
+			color: #000;
+		}
+		#image img{
+			width: 49%;
+			aspect-ratio: 3/2;
+		}
+		#map div{
+			margin-left: 20%;
+		}
+		table{
+			margin: auto;
+			width: 98%;
+			height: 300px;
+		}
+		canvas{
+			border: 1px solid black;
+			width: 98%;
+			height: 200px;
+		}
+		footer{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Image, Colors and Canvas</h1>
+		<nav>
+			<ul>
+				<li><a href="#image">Images</a></li>
+				<li><a href="#map">Image map</a></li>
+				<li><a href="#color">Colors</a></li>
+				<li><a href="#canvas">Canvas</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="image">
+		<h2>Images</h2>
+		<div>
+			<img src="12-img1.jpeg" alt="fresh fruit on the table">
+			<img src="12-img2.jpeg" alt="sun set at tea leaves">
+			<img src="12-img3.jpeg" alt="frozen camera in winter">
+			<a href="10-link_and_url.html" target="_blank"><img src="12-img4.jpeg" alt="green"></a>
+		</div>
+	</section>
+	<section id="map">
+		<h2>Image map</h2>
+		<div>
+			<img src="12-map.jpg" usemap="#mymap" alt="food plate">
+			<map name="mymap">
+				<area shape="circle" coords="321, 283, 60" href="09-final_project_with_text.html">
+				<area shape="circle" coords="53, 266, 70" href="09-final_project_with_text.html">
+				<area shape="poly" coords="312,21, 346,10, 383,23, 421,62, 446,120, 373,121, 330,97, 310,66" href="09-final_project_with_text.html">
+				<area shape="poly" coords="385,184, 437,140, 530,78, 599,36, 638,68, 638,163, 554,214, 451,218, 398,231" href="09-final_project_with_text.html">
+			</map>
+		</div>
+	</section>
+	<section id="color">
+		<h2>Color Pallate</h2>
+		<table>
+			<tr>
+				<td style="background-color: #c1121f;"></td>
+				<td style="background-color: #780000;"></td>
+				<td style="background-color: #fdf0d5;"></td>
+				<td style="background-color: #003049;"></td>
+			</tr>
+			<tr>
+				<td style="background-color: #606c38;"></td>
+				<td style="background-color: #bc6c25;"></td>
+				<td style="background-color: #da627d;"></td>
+				<td style="background-color: #ff6d00;"></td>
+			</tr>
+			<tr>
+				<td style="background-color: #386641;"></td>
+				<td style="background-color: #fdc500;"></td>
+				<td style="background-color: #3d348b;"></td>
+				<td style="background-color: #38040e;"></td>
+			</tr>
+			<tr>
+				<td style="background-color: #5aba4a;"></td>
+				<td style="background-color: #403d39;"></td>
+				<td style="background-color: #9163cb;"></td>
+				<td style="background-color: #80b918;"></td>
+			</tr>
+		</table>
+	</section>
+	<section id="canvas">
+		<h2>Canvas</h2>
+		<div>
+			<canvas id="can"></canvas>
+		</div>
+	</section>
+	<footer>
+		<p>&copy; 2026</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="html forms">
+	<meta name="keywords" content="frame, html, input types">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>HTML forms</title>
+	<style>
+		header, footer{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h1>Intern-Front End Developer</h1>
+</header>
+<form action="forms.php" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Data Collection</legend>
+		<input type="hidden" name="id" value="100">
+		
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="firstname" size="10" placeholder="John" required><br>
+		
+		<label for="lastname">Last Name:</label>
+		<input type="text" id="lastname" name="lastname" size="10"><br>
+		
+		<label for="nic">NIC:</label>
+		<input type="number" id="nic" name="nic" maxlength="12"><br>
+		
+		<label for="bday">Birth Date:</label>
+		<input type="date" id="bday" name="bday" min="1980-01-01" max="2005-01-01"><br>
+		
+		<label for="gender">Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="Male" checked>
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="Female">
+		<label for="female">Female</label><br>
+		
+		<label for="mobile">Mobile Number:</label>
+		<input type="tel" id="mobile" name="mobile"><br>
+		
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email"><br>
+		
+		
+		<label for="district">District:</label>
+		<input type="text" name="district" list="district"><br>
+			<datalist id="district">
+				<option value="Colombo">
+				<option value="Gampaha">
+				<option value="Kalutara"></option>
+			</datalist>
+		
+		<label for="git">Your GitHub link:</label>
+		<input type="url" id="git" name="git"><br>
+		
+		<label for="skill">Skills:</label><br>
+		<input type="checkbox" id="html" name="skill[]" value="HTML">
+		<label for="html">HTML</label><br>
+		<input type="checkbox" id="css" name="skill[]" value="CSS">
+		<label for="css">CSS</label><br>		
+		<input type="checkbox" id="js" name="skill[]" value="JavaScript">
+		<label for="js">JavaScript</label><br>
+
+		<label for="method">Prefered Method of Working</label>
+		<select id="method" name="method">
+			<option value="Onsite">Onsite</option>
+			<option value="online">Online</option>
+			<option value="hybrid">Hybrid</option>
+		</select><br>
+		
+		<label for="lang">Language Profiency:</label><br>
+		<label>Sinhala</label>
+		<input type="range" min="0" max="10" value="6" oninput="sinhala.value = (this.value/10*100).toFixed(0) + '%'">
+		<output name="sinhala">60%</output><br>
+		<label>English</label>
+		<input type="range" min="0" max="10" value="5" oninput="english.value = (this.value/10*100).toFixed(0) + '%'">
+		<output name="english">50%</output><br>
+		<label>Tamil</label>
+		<input type="range" min="0" max="10" value="1" oninput="tamil.value = (this.value/10*100).toFixed(0) + '%'">
+		<output name="tamil">10%</output><br>
+
+		<label for="pwd">Create a Password:</label>
+		<input type="password" id="pwd" name="pwd"><br>
+		
+		<label for="idea">Why you choose to apply?</label><br>
+		<textarea id="idea" name="idea" cols="50" rows="8">I choose to apply this because ....</textarea><br>
+		
+		<label for="cv">Upload Your CV</label>
+		<input type="file" id="cv" name="cv"><br>
+		
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>
+<footer>
+	<p>IT Lab pvt.ltd</p>
+</footer>
+</body>
+</html>

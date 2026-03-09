@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="practicing link and url">
+	<meta name="keywords" content="link, url, mailto">
+	<title>Links and URL</title>
+	<style>
+		header, footer{
+			background-color: #CC5A71;
+			text-align: center;
+			padding: 3%;			
+		}
+		header{			
+			border-radius: 15px 15px 0px 0px;			
+		}
+		footer{
+			border-radius: 0 0 15px 15px;
+		}
+		main, #section2{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		article, #links{
+			flex: 1;
+		}
+		article{
+			background-color: #CA7B76;			
+		}
+		aside{
+			background-color: #C89B7B;
+			width: 25%;
+		}
+		nav{
+			text-align: right;			
+		}
+		nav li{
+			list-style-type: none;
+			display: inline;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+			padding-right: 4%;			
+		}
+		nav a:hover{
+			font-size: 110%;
+			font-weight: bolder;
+		}
+		#section1, #links, #mailto, aside{
+			padding: 3%;
+		}#section1{
+			border-bottom: 1px dotted black;
+		}
+		#links{
+			border-right: 1px dotted black;
+		}
+		#links a{
+			background-color: #9CC4B2;
+			padding: 2%;
+			border-radius: 15px;
+		}
+		#links a:hover{
+			background-color: #393D3F;
+			color: #fff;
+		}
+		#mailto a{
+			background-color: #393D3F;
+			padding: 2%;
+		}
+		#mailto a:hover{
+			background-color: #fff;
+		}
+		ruby{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Central Point</h1>
+		<nav>
+			<ul>
+				<li><a href="#url">URLs</a></li>
+				<li><a href="#links">Hyperlinks</a></li>
+				<li><a href="#mailto">Mailto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<section id="section1">
+				<h2>URLs</h2>
+				<h3>Uniform Resource Locator</h3>
+				<p>scheme://host.domain:port/path/file_name?query_string#anchor</p>
+				<ol>
+					<li>Scheme – Protocol (http, ftp, mailto, file)</li>
+					<li>Host – Domain host (default for HTTP is www)</li>
+					<li>Domain – Website name (e.g., google.</li>
+					<li>Port – Server connection port (default HTTP = 80)</li>
+					<li>Path – Resource path in the server</li>
+					<li>File Name – Name of the HTML/file</li>
+					<li>Query String – Parameters for web apps (?key=value&...)</li>
+					<li>Anchor – Specific location on the page (#id)</li>
+				</ol>
+			</section>
+			<section id="section2">
+				<div id="links">
+					<h2>Hyperlinks</h2>
+					<h3>Connect the world</h3>
+					<p><a href="09-final_project_with_text.html" target="_self">To open a link here.</a></p>
+					<p><a href="09-final_project_with_text.html" target="_blank">Let's go to a new tab.</a></p>	
+				</div>
+				<div id="mailto">
+					<h2>Mailto</h2>
+					<h3>Linking to mail system.</h3>
+					<p>You can get more details about the above fact via mail.</p>
+					<p><a href="mailto:kalpanimadushika399@gmail.com">E-mail Us</a></p>
+				</div>
+			</section>			
+		</article>		
+		<aside>
+			<div>
+				<h2>Ruby</h2>
+				<p>
+				<ruby>
+				    සිං <rt>sin</rt>
+				    හ <rt>ha</rt>
+				    ල <rt>la</rt>
+				</ruby>
+				</p>
+				<p>
+				<ruby>
+				    한 <rt>han</rt>
+				    국 <rt>guk</rt>
+				    어 <rt>eo</rt>
+				</ruby>
+				</p>
+				<p>
+				<ruby>
+				    日 <rt>ni</rt>
+				    本 <rt>hon</rt>
+				    語 <rt>go</rt>
+				</ruby>
+				</p>
+				<p>
+				<ruby>
+				    हि <rt>hi</rt>
+				    न्दी <rt>ndi</rt>
+				</ruby>
+				</p>
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2026 RoadMap team</p>
+		<address>No.134/5<br>
+		Main Street,<br>
+		Wall District,<br>
+		Mainland.
+		</address>
+	</footer>
+</body>
+</html>
