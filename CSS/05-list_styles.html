@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="kalpani-md">
+	<meta name="description" content="different types of list in html and css">
+	<meta name="keywords" content="list, ordered list, unordered lists, defenition lists, html lists">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lists in html</title>
+	<link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="04-05.css">
+	<style>
+	section{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.pack{
+		flex: 1 1 250px;
+		margin: 1%;
+		border: 1px solid black;
+		border-radius: 15px;
+		transition: transform 0.3sec ease;
+	}
+	.pack:hover{
+		transform: translateY(-5px);
+	}
+	.pack img{
+		width: 100%;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	h3{
+		text-shadow: 0.5px 0.5px 0.5px;
+	}
+	.pack li{
+		list-style-position: inside;
+	}
+	.pack dl, .pack ol, .pack ul, .pack a{
+		margin: 5%;
+	}
+	.pack ol, .pack ul{
+		list-style-type: none;
+	}
+	.pack ol{
+		padding-left: 0;
+	}
+	.pack ol li{
+		position: relative;
+		padding-left: 30px;
+	}
+	.pack ol li::before{
+		content: "add_location";
+		font-family: 'Material Icons';
+		position: absolute;
+		left: 5px;
+		top: 0;
+	}
+	.pack ul li:nth-child(odd)::before{
+		content: "calendar_month";
+		font-family: 'Material Icons';
+		margin-right: 5%;
+	}
+	.pack ul li:nth-child(even)::before{
+		content: "sell";
+		font-family: 'Material Icons';
+		margin-right: 5%;
+	}
+	.pack a{
+		text-decoration: none;
+		color: #000;
+		display: block;
+		padding: 5%;
+		background-color: #AEB784;	
+		border-radius: 20px;
+	}
+	.pack a:hover{
+		background-color: #41431B;
+		color: #fff;
+	}
+	.cus{
+		margin: 1%;
+	}
+	.cus a{
+		display: block;
+		background-color: #41431B;
+		color: #fff;
+		text-align: center;
+		padding: 3%;
+		border-radius: 15px;
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+	<header id="head">
+        <h1>
+            Around The World            
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="04-display_position_floating.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="07-effects_frames_conrols.html">Capture</a></li>
+            <li><a href="05-list_styles.html" class="active">Packages</a></li>
+        </ul>
+    </nav>
+    <article>
+    	<h2>Packages</h2>
+    	<section>
+    	<div class="pack">
+    		<img src="9-img.jpeg" alt="adventure hunting">
+    		<dl>
+    			<dt><h3>Adventure Hunting</h3></dt>
+    			<dd><h4>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4></dd>
+    		</dl>
+    		<ol>
+    			<li>Arugambe</li>
+    			<li>Hill Country Hiking</li>
+    			<li>Kitulgala Water Rafting</li>
+    		</ol>
+    		<ul>
+    			<li>Duration: 05 Days</li>
+    			<li>Price: 125, 400 LKR</li>
+    		</ul>
+    		<a href="06-table_layouts.html">Book Now</a>
+	   	</div>
+    	<div class="pack">
+    		<img src="10-img.jpeg" alt="pilgimage">
+    		<dl>
+    			<dt><h3>Pilgrimage</h3></dt>
+    			<dd><h4>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4></dd>
+    		</dl>
+    		<ol>
+    			<li>Dalada Maligawa</li>
+    			<li>Ruwanweli Seya</li>
+    			<li>Sri Maha Bodhi</li>
+    		</ol>
+    		<ul>
+    			<li>Duration: 03 Days</li>
+    			<li>Price: 50, 000 LKR</li>
+    		</ul>
+    		<a href="#booking">Book Now</a>
+    	</div>
+    	<div class="pack">
+    		<img src="11-img.jpeg" alt="tasty checking">
+    		<dl>
+    			<dt><h3>Tasty Checking</h3></dt>
+    			<dd><h4>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4></dd>
+    		</dl>
+    		<ol>
+    			<li>Gemi Rasa Food Court</li>
+    			<li>Kema Suuthra Restaurant</li>
+    			<li>Mathara Bath Kade</li>
+    		</ol>
+    		<ul>
+    			<li>Duration: 03 Days</li>
+    			<li>Price: 65, 500 LKR</li>
+    		</ul>
+    		<a href="#booking">Book Now</a>
+    	</div>
+    	<div class="pack">
+    		<img src="12-img.jpeg" alt="capture the nature">
+    		<dl>
+    			<dt><h3>Capture the Nature</h3></dt>
+    			<dd><h4>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4></dd>
+    		</dl>
+    		<ol>
+    			<li>Yala National Park</li>
+    			<li>Kumana National Park</li>
+    			<li>Sinharaja Forest Reserve</li>
+    		</ol>
+    		<ul>
+    			<li>Duration: 06 Days</li>
+    			<li>Price: 80, 200 LKR</li>
+    		</ul>
+    		<a href="#booking">Book Now</a>
+    	</div>
+    	</section>
+    	<div class="cus"><a href="08-advance_features_of_html.html">Customized Your Own Package</div>
+    	<a class="b2t" href="#head"><i class="material-icons" style="font-size:36px;">keyboard_double_arrow_up</i></a>
+    	<i class="material-icons chat" style="font-size:36px;">chat</i>    	
+    </article>
+    <footer>
+        <p>&copy; Around the World</p>
+        <cite>www.aroundtheworld.lk</cite>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="background, color, gradient">
+	<meta name="description" content="backgrounds color and gradient">
+	<link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+	<title>Backgrounds, Colors, and Gradients</title>
+	<style>
+		body{
+			background-color: #E6DCDA;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		.hero{
+			background: linear-gradient(135deg,#3a86ff,#8338ec);
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+			color: #fff;
+			padding: 100px;
+		}
+		footer{
+			background: linear-gradient(135deg,#3a86ff,#8338ec);
+			text-align: center;
+			padding: 25px;
+		}
+		button{
+			background: linear-gradient(to right,#ff006e,#ffbe0b);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+		}
+		.services{
+			background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('1-img.jpeg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.services{
+			padding: 20px;			
+		}
+		.services div{
+			width: 100%;
+			color: #fff;
+			text-align: center;
+		}
+		.gallery{
+    		display:flex;
+    		flex-wrap:wrap;
+		}
+		.gallery img{
+    		width: 50%;
+    		aspect-ratio: 3/2;
+    		object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<header class="hero">		
+		<h1>Future Web Solution</h1>
+		<button>Get Started</button>			
+	</header>
+	<section class="services">
+		<div>
+			<h2>Design & consultancy</h2>
+			<p>Our solutions experts help businesses develop, integrate, and maximize the value of IT systems, databases and apps. Explore our collection on design leadership, which covers the evolving role of your Chief Design Officer (CDO) and how top designers can successfully transition into the C-suite.</p>
+		</div>
+		<div>
+			<h2>Professional services</h2>
+			<p>We offer a broad range of IT professional services including solutions implementation, migration, project/program management and IT staffing and placement.</p>
+		</div>
+		<div>
+			<h2>NOC/SOC</h2>
+			<p>Our Network Operations Center (NOC) and the Security Operations Center (SOC) is to ensure that the corporate network meets business needs. The NOC focuses on meeting service level agreements (SLAs) and protecting against natural disruptions, while the SOC works to identify and block cyber threats to the network.</p>
+		</div>
+	</section>
+	<section class="gallery">
+		<img src="2-img.jpeg" alt="tech related images">
+		<img src="3-img.jpeg" alt="tech related images">
+		<img src="4-img.jpg" alt="laptop in a neon light">
+		<img src="5-img.jpg" alt="earth to the space">
+	</section>
+	<footer>
+		<p>&copy; 2026 Future Web Solutions</p>
+	</footer>
+</body>
+</html>

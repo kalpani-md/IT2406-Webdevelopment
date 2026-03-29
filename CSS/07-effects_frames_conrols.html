@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="kalpani-md">
+	<meta name="description" content="effects frames and controls in css">
+	<meta name="keywords" content="effects, frames, controls, html, css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Effects, frames, and controls</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="04-05.css">
+	<style>
+	#gallery{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#gallery div{
+		flex: 1 1 250px;
+		overflow: hidden;
+		border-radius: 12px;
+		margin: 1%;
+	 	transition: box-shadow 0.4s ease;
+	}
+	#gallery div:hover{
+    	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	}
+	#gallery img{
+		width: 100%;
+		aspect-ratio: 3/2;
+		display: block;
+		
+		animation-name: myani;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+
+		transition: transform 0.4s ease, opacity 0.4s ease;
+	}
+	#gallery img:hover{
+		opacity: 0.85;
+		transform: translateY(-5px) scale(1.12);
+	}
+	@keyframes myani{
+		0%, 100%{
+			transform: translateY(0);
+		}
+		50%{
+			transform: translateY(-5px);
+		}
+	}
+	</style>
+</head>
+<body>
+	<header id="head">
+        <h1>
+            Around The World            
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="04-display_position_floating.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="07-effects_frames_conrols.html" class="active">Capture</a></li>
+            <li><a href="05-list_styles.html">Packages</a></li>
+        </ul>
+    </nav>
+    <article>
+    	<h2>Capture</h2>
+    	<div id="gallery">
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=1" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=2" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=3" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=4" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=5" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=6" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=7" alt="Image">
+    		</div>
+    		<div>
+    			<img src="https://picsum.photos/300/200?random=8" alt="Image">
+    		</div>
+    	</div>
+    	<a class="b2t" href="#head"><i class="material-icons" style="font-size:36px;">keyboard_double_arrow_up</i></a>
+        <i class="material-icons chat" style="font-size:36px;">chat</i>
+    </article>
+	<footer>
+        <p>&copy; Around the World</p>
+        <cite>www.aroundtheworld.lk</cite>
+    </footer>
+</body>
+</html>

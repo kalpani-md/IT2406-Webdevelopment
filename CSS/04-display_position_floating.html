@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="display, position, floating, elements, html">
+    <meta name="description" content="display position floating elements in html">
+    <meta name="author" content="kalpani-md">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display, position, floatin</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="04-05.css">
+    <style>
+        .one{   
+            padding-bottom: 3%;
+        }
+        .one img{
+            float: right;
+            height: auto;
+            margin-left: 1%;
+        }
+        .one::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .one p{
+            text-align: justify;
+        }
+        .two{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .two div{
+            flex: 1 1 250px;
+            position: relative;
+        }
+        .two img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        .two p{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color:white;
+            background:rgba(0,0,0,0.5);
+            padding:5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="head">
+        <h1>
+            Around The World            
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="04-display_position_floating.html" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="07-effects_frames_conrols.html">Capture</a></li>
+            <li><a href="05-list_styles.html">Packages</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section class="one">
+            <img src="8-img.jpeg" alt="travelling poster">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+        <section class="two">
+            <div id="div1">
+                <img src="9-img.jpeg" alt="beautiful beach">
+                <p id="img2" >Breathtaking Beaches</p>
+            </div>
+            <div id="div2">
+                <img src="10-img.jpeg" alt="Dalada Maligawa, Temple of the Tooth">
+                <p id="img3" >Dalada Maligawa</p>
+            </div>
+            <div id="div3">
+                <img src="11-img.jpeg" alt="delicious authentic sri lankan menue">
+                <p id="img4">Delicious Foods</p>
+            </div>
+            <div id="div4">                
+                <img src="12-img.jpeg" alt="elephants in sri lanka">
+                <p id="img5">Wildlife Beauty</p>
+            </div>
+        </section>
+        <a class="b2t" href="#head"><i class="material-icons" style="font-size:36px;">keyboard_double_arrow_up</i></a>
+        <i class="material-icons chat" style="font-size:36px;">chat</i>
+    </article>
+    <footer>
+        <p>&copy; Around the World</p>
+        <cite>www.aroundtheworld.lk</cite>
+    </footer>
+</body>
+</html>

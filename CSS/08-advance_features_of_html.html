@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="kalpani-md">
+	<meta name="keywords" content="advanced, features, html, advances features in html">
+	<meta name="description" content="advanced features in html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advanced features in html</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="04-05.css">
+	<style> 
+        #travel_details h4, #place h4, #note h4{
+            margin-left: 1%;
+        }
+        #travel_details div, #place div, #note textarea{
+            margin: 1.5%;
+        }
+        #travel_details input, #note textarea{
+            background-color: #E3DBBB;
+            padding: 0.5%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .places p{
+            display: inline-block;
+            background-color: #AEB784;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        #dropbox{
+            width: 75%;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 200px;
+            padding: 1%;
+        }
+        #dropbox p{
+            background-color: #41431B;
+            color: #fff;
+            padding: 1%;
+            margin: 1%;
+            max-width: 20%;
+            border-radius: 5px;
+        }
+        button{
+            margin: 1%;
+            padding: 1%;
+            background-color: #41431B;
+            color: #fff;
+            border-radius: 5px;
+        }
+        #travel_details input[type="text"]:focus, #travel_details input[type="number"]:focus, #note textarea:focus{
+            background-color: #F8F3E1;
+        }
+    </style>
+</head>
+<body>
+	<header id="head">
+        <h1>
+            Around The World            
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="04-display_position_floating.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="07-effects_frames_conrols.html">Capture</a></li>
+            <li><a href="05-list_styles.html" class="active">Packages</a></li>
+        </ul>
+    </nav>
+    <article>
+    	<a class="b2t" href="05-list_styles.html"><i class="material-icons" style="font-size:36px;">keyboard_double_arrow_left</i></a>
+    	<h2>Customize Package</h2>
+
+    	<h3 id="package_name" contenteditable="true" spellcheck="true" data-topic="package_name">Package Name</h3>
+        <form aria-labelledby="package_name">            
+    	<section id="travel_details">
+            <h4>Travel Details</h4>
+            <div>
+                <label for="start">Start</label>
+                <input type="text" name="start" id="start" placeholder="Colombo">
+            </div>
+            <div>
+                <label for="end">End</label>
+                <input type="text" name="end" id="end" placeholder="Yala">
+            </div>
+            <div>
+                <label for="days">Days</label>
+                <input type="number" name="days" id="days" placeholder="05" min="2">           
+            </div>
+            <div>
+                <label for="lang_input">Language you preffered</label>
+                <input type="text" name="lang" list="lang" id="lang_input">
+                <datalist id="lang">
+                    <option>English</option>
+                    <option>French</option>
+                    <option>German</option>
+                </datalist>                
+            </div>
+            <div>
+                <label for="price">Budget (LKR)</label>
+                <input type="number" name="price" id="price" min="50000">
+            </div>
+        </section>
+        <section id="place">
+            <h4>Suggest places</h4>
+            <div class="places">
+                <p id="arugambe" draggable="true" ondragstart="drag(event)">Arugambe</p>
+                <p id="dalada_maligawa" draggable="true" ondragstart="drag(event)">Dalada Maligawa</p>
+                <p id="yala" draggable="true" ondragstart="drag(event)">Yala</p>
+                <p id="kumana" draggable="true" ondragstart="drag(event)">Kumana</p>                
+            </div>
+            <div id="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)" role="list" aria-label="Selected travel places">Drop here the places you like to visit</div>
+        </section>
+        <section id="note">
+            <h4>Travel Notes</h4>
+            <textarea id="notes" rows="10" cols="100" placeholder="type your notes here..." spellcheck="true"></textarea>               
+        </section>
+        <button type="button" onclick="saveData()">Save</button>
+        <button type="button" onclick="clearData()">Clear</button><br>
+        </form>
+
+        <script>
+            function saveData(){
+                let name = document.getElementById("package_name").innerHTML;
+                localStorage.setItem("pack_name", name);
+
+                let note = document.getElementById("notes").value;
+                localStorage.setItem("travel_note", note);
+
+                alert("Package Saved");
+            }
+            function clearData() {
+                localStorage.clear();
+                location.reload();
+            }
+            window.onload = function(){
+                let saved_name = localStorage.getItem("pack_name");
+                if(saved_name){
+                    document.getElementById('package_name').innerHTML = saved_name;
+                }
+
+                let saved_note = localStorage.getItem("travel_note");
+                if(saved_note){
+                    document.getElementById("notes").value = saved_note;
+                }
+            }
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            function drop(ev) {
+                ev.preventDefault();
+                let data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+
+        <a class="b2t" href="#head"><i class="material-icons" style="font-size:36px;">keyboard_double_arrow_up</i></a>
+        <i class="material-icons chat" style="font-size:36px;">chat</i>
+    </article>
+	<footer>
+        <p>&copy; Around the World</p>
+        <cite>www.aroundtheworld.lk</cite>
+    </footer>
+</body>
+</html>

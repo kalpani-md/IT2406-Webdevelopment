@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<base target="_blank">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="boxes, columns, padding, margin, border">
+	<meta name="description" content="boxes and columns with css">
+	<meta name="author" content="kalpani-md">
+	<meta http-equiv="refrsh" content="30">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../HTML/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		body{
+			margin: 3%;
+		}
+		header{
+			padding-top: 5%;
+			padding-bottom: 5%;
+			background-color: #355872;
+			border-top-left-radius: 25px;
+			border-top-right-radius: 25px;
+		}
+		header h1{
+			text-align: center;	
+			font-size: 500%;
+			margin: ;
+		}
+		h1{
+			font-size: 200%;
+		}
+		nav{
+			background-color: #7AAACE;	
+		}
+		ul{
+			list-style-type: none;
+			display: flex;
+			justify-content: flex-end;
+		}
+		ul li a{
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color: #000;
+			padding: 20px;
+		}
+		ul li a:hover{
+			background-color: #87b2d2;
+		}
+		article{
+			background-color: #9CD5FF;
+			padding: 3%;
+		}
+		#art1 img{
+			float: left;
+			width: 65%;
+			height: auto;
+			padding-right: 1%;
+		}
+		#art1{
+			text-align: justify;
+		}
+		#art1p2{
+			clear: left;
+			padding-bottom: 2%;
+			border-bottom: 2px solid black;
+		}
+		#art2{
+			display: flex;
+		}
+		main{
+			flex: 7;
+			border-right: 2px solid black;
+		}
+		main p {
+			text-align: justify;
+			padding-right: 3%;
+			columns: 2;
+			column-gap: 20px;
+		}
+		aside{
+			flex: 3;
+		}
+		aside div{
+			padding: 1%;
+		}
+		aside img{
+			width: 100%;
+		}
+		footer{
+			text-align: center;
+			background-color: #355872;
+			padding-top: 3%;
+			padding-bottom: 3%;
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+		}
+		footer a{
+			color: #000;
+			text-decoration: none;
+		}
+		.fa{
+			padding: 1%;
+		}
+		span{
+			margin-top: 2%;
+			display: inline-block;
+			padding: 1%;
+			background-color: #9CD5FF;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Tech Observer</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#innovations">Innovations</a></li>
+			<li><a href="#publications">Publications</a></li>
+		</ul>
+	</nav>
+	<article id="art1">
+		<h1>Neque porro quisquam est qui dolorem</h1>
+		<h5>by Article Author</h5>
+		<img src="7-img.jpeg" alt="tech news">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae imperdiet lorem. Vestibulum semper enim vitae ligula blandit, maximus posuere purus tristique. Donec ut enim ac ipsum venenatis laoreet. Cras accumsan, lacus in ultrices tristique, neque nisi pharetra massa, non tempor elit arcu sit amet nisi. Morbi aliquet leo eros, vitae cursus dolor sagittis sit amet. Phasellus nulla sem, sagittis nec nibh nec, cursus ultricies tortor. Aliquam non tellus commodo, aliquam augue id, sodales diam. Praesent pellentesque porttitor vehicula. Etiam varius neque sed vehicula suscipit. Mauris mollis nibh id massa porttitor euismod. Nunc justo purus, tincidunt vel massa eu, efficitur pharetra urna. Quisque rhoncus vel erat quis finibus. Pellentesque elementum, justo a mattis cursus, ante massa feugiat eros, et faucibus magna est eu tellus. Sed efficitur nulla nec eros dapibus, ut fringilla enim ornare. Integer ac tristique nibh, non mollis lorem. Vivamus dignissim sem nec mi vulputate faucibus. In rutrum enim turpis, sed viverra orci fringilla vel. Suspendisse est quam, dapibus eu urna in, volutpat euismod quam.</p>
+		<p id="art1p2">Duis scelerisque mi sed arcu ultrices, sit amet convallis diam finibus. Duis pulvinar nisi eu convallis semper. Cras sit amet maximus diam. Praesent ipsum nibh, suscipit vel augue a, egestas molestie ante. Integer tempus dapibus est, eu hendrerit orci rhoncus vitae. Cras mollis finibus finibus. Nunc lacinia metus nunc, gravida iaculis dui efficitur nec. This paragraph behaves like text in a newspaper or a story book. The image is floated to the left side, so the text wraps around it. When the paragraph reaches the bottom of the image, it naturally continues underneath and fills the remaining width of the page. This is the classic layout technique used in magazines, articles, and news websites when an image appears beside the first part of a long story.</p>
+	</article>
+	<article id="art2">
+		<main>
+			<h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h1>
+			<h5>by Article Author</h5>
+			<p>Fusce aliquam nisi imperdiet justo ultricies condimentum. Fusce interdum bibendum turpis tincidunt porttitor. Phasellus egestas lorem pharetra urna vestibulum mattis. Pellentesque suscipit turpis turpis, nec elementum mauris iaculis in. Aenean consectetur lectus eget lacus sollicitudin tincidunt. Proin dapibus augue dignissim, auctor lectus vel, venenatis neque. Aenean luctus tortor diam. Morbi at molestie nibh, nec pretium ligula.Vivamus ipsum diam, tincidunt eu ipsum nec, dictum bibendum dui. Cras sagittis turpis eu lacus convallis condimentum. Morbi vitae elementum lacus. Cras at lacus volutpat, gravida odio nec, ullamcorper elit. Quisque laoreet est nec nibh suscipit varius. Sed pretium lorem ut risus efficitur imperdiet. Duis rhoncus urna nec lorem varius, id luctus felis scelerisque. Sed laoreet arcu accumsan risus viverra, non placerat dui pharetra. Suspendisse finibus mattis facilisis. Phasellus egestas, justo eu elementum eleifend, lacus tortor ultrices tortor, at egestas ipsum neque ac tortor. Mauris eu nisi nec lacus pellentesque feugiat ut vitae nisi. Donec sodales eleifend bibendum.Fusce aliquam nisi imperdiet justo ultricies condimentum. Fusce interdum bibendum turpis tincidunt porttitor. Phasellus egestas lorem pharetra urna vestibulum mattis. Pellentesque suscipit turpis turpis, nec elementum mauris iaculis in. Aenean consectetur lectus eget lacus sollicitudin tincidunt. Proin dapibus augue dignissim, auctor lectus vel, venenatis neque. Aenean luctus tortor diam. Morbi at molestie nibh, nec pretium ligula.Vivamus ipsum diam, tincidunt eu ipsum nec, dictum bibendum dui. Cras sagittis turpis eu lacus convallis condimentum. Morbi vitae elementum lacus. Cras at lacus volutpat, gravida odio nec, ullamcorper elit. Quisque laoreet est nec nibh suscipit varius. Sed pretium lorem ut risus efficitur imperdiet. Duis rhoncus urna nec lorem varius, id luctus felis scelerisque. Sed laoreet arcu accumsan risus viverra, non placerat dui pharetra. Suspendisse finibus mattis facilisis. Phasellus egestas, justo eu elementum eleifend, lacus tortor ultrices tortor, at egestas ipsum neque ac tortor. Mauris eu nisi nec lacus pellentesque feugiat ut vitae nisi. Donec sodales eleifend bibendum.</p>
+		</main>
+		<aside>
+			<div>
+				<img src="4-img.jpg" alt="tech news">
+				<h3><a href="" target="_blank">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.......</a></h3>
+			</div>
+			<div>
+				<img src="5-img.jpg" alt="tech news">
+				<h3><a href="" target="_blank">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet......</a></h3>
+			</div>
+		</aside>
+	</article>
+	<footer>
+		<p>&copy; 2026 Tech Observer</p>
+		<a href="#"><i class="fa fa-twitter-square" style="font-size: 30px;"></i></a>
+		<a href="#"><i class="fa fa-youtube" style="font-size: 30px;"></i></a>
+		<a href="#"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></a><br>
+		<span><a href="mailto:kalpanimadushika399@gmail.com">Mail Us</a></span>
+	</footer>
+</body>
+</html>
